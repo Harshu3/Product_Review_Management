@@ -17,6 +17,7 @@ namespace Product_Review_Management
                 new ProductReview(){ProductId = 1, UserId = 6, Review = "good", IsLike = true, Rating = 80}
             };
             DisplayProducts(list);
+            ProductReviewManagement.RetrieveTop3Products(list);
         }
 
         public static void DisplayProducts(List<ProductReview> list)
